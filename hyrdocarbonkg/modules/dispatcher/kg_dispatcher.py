@@ -1,6 +1,6 @@
 import grpc
-//from jio.brain.proto.knowledge.api.data.get_all_children_pb2 import GetAllChildrenRequest
-//from jio.brain.proto.knowledge.api.data.get_all_children_pb2_grpc import GetAllChildrenServiceStub
+from jio.brain.proto.knowledge.api.data.get_all_children_pb2 import GetAllChildrenRequest
+from jio.brain.proto.knowledge.api.data.get_all_children_pb2_grpc import GetAllChildrenServiceStub
 
 class KGDispatcher:
     '''
