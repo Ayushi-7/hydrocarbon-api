@@ -1,0 +1,15 @@
+syntax = "proto3";
+package jio.brain.proto.knowledge.hydrocarbon;
+
+import "jio/brain/proto/knowledge/hydrocarbon/base/fluid.proto";
+
+// TODO package google.protobuf Empty
+
+message GetAllFluidRequest {
+    
+}
+
+// Returns a list of ID and Name Tuple
+message GetAllFluidResponse { 
+    repeated jio.brain.proto.knowledge.hydrocarbon.base.Fluid fluid = 1;
+}
