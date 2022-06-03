@@ -1,0 +1,21 @@
+syntax = "proto3";
+package jio.brain.proto.knowledge.hydrocarbon;
+
+import "jio/brain/proto/knowledge/hydrocarbon/req_res/get_all_equipment.proto";
+import "jio/brain/proto/knowledge/hydrocarbon/req_res/get_all_fluid.proto";
+
+service HydrocarbonKnowledgeApiService { 
+
+    /** Returns list of dictionaries with Equipment names and ids
+    Usage: 
+        •	Create the automated testcases for each Equipment
+        •	Equipments search API for auto-suggest
+    */
+    rpc GetAllEquipment(GetAllEquipmentRequest) returns (GetAllEquipmentResponse) {} 
+
+    /** Returns list of dictionaries with Fluid names and ids
+    Usage: 
+        •	Create the automated testcases for each Fluid
+        •	Fluid search API for auto-suggest
+    */
+    rpc GetAllFluid(GetAllFluidRequest) returns (GetAllFluiResponse) {} 
