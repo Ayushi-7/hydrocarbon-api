@@ -5,7 +5,7 @@ from hydrocarbonkg.modules.worker.utils.config import status
 from hydrocarbonkg.modules.worker.utils.validate_kg_response import validate_kg_response
 from google.protobuf.json_format import MessageToDict
 from hydrocarbonkg.modules.dispatcher.kg_dispatcher import KGDispatcher
-//from jio.brain.proto.knowledge.healthcare.req_res.get_all_disease_pb2 import GetAllEquipmentResponse......
+//from jio.brain.proto.knowledge.hydrocarbon.req_res.get_all_equipment_pb2 import GetAllEquipmentResponse......
 import copy
 
 class GetAllEquipmentWorker:
