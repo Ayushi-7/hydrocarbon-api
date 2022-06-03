@@ -49,7 +49,7 @@ class GetAllFluidWorker:
                                     "name": node.name,
                                     "display_name": node.display_name})
             
-            response = GetAllFluidResponse(disease = response_obj, status = status)
+            response = GetAllFluidResponse(fluid = response_obj, status = status)
             
         logger.debug(logconfig.POSTPROCESSING_COMPLETED)
         return response
