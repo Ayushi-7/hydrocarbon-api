@@ -38,7 +38,7 @@ class GetAllEquipmentWorker:
         logger.debug(logconfig.POSTPROCESSING)
 
         if not response:
-            response = GetAllDiseaseResponse(status = status)        
+            response = GetAllEquipmentResponse(status = status)        
         else:
             response_obj = []
             to_node_list = response.to_node
@@ -49,7 +49,7 @@ class GetAllEquipmentWorker:
                                     "name": node.name,
                                     "display_name": node.display_name})
             
-            response = GetAllDiseaseResponse(disease = response_obj, status = status)
+            response = GetAllEquipmentResponse(equipment = response_obj, status = status)
             
         logger.debug(logconfig.POSTPROCESSING_COMPLETED)
         return response
