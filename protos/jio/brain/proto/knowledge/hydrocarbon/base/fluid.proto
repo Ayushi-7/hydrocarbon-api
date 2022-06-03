@@ -1,0 +1,9 @@
+syntax = "proto3";
+package jio.brain.proto.knowledge.hydrocarbon.base;
+
+message Fluid {
+    uint32 id = 1;
+    string entity_type = 2;
+    string name = 3;
+    string display_name = 4;
+}
