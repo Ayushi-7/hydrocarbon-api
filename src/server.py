@@ -4,7 +4,7 @@ from concurrent import futures
 from dotenv import load_dotenv
 from utils.logs.logger import get_logger
 from modules.manager.service_manager import execute
-//import jio.brain.proto.knowledge.healthcare.api.healthcare_kg_service_pb2_grpc as healthcare_knowledge_service
+//import jio.brain.proto.knowledge.hydrocarbon.api.hydrocarbon_kg_service_pb2_grpc as hydrocarbon_knowledge_service
 
 logger = get_logger("root", "server")
 
