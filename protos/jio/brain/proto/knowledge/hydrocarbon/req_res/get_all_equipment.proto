@@ -1,0 +1,15 @@
+syntax = "proto3";
+package jio.brain.proto.knowledge.hydrocarbon;
+
+import "jio/brain/proto/knowledge/hydrocarbon/base/equipment.proto";
+
+// TODO package google.protobuf Empty
+
+message GetAllEquipmentRequest {
+    
+}
+
+// Returns a list of ID and Name Tuple
+message GetAllEquipmentResponse { 
+    repeated jio.brain.proto.knowledge.hydrocarbon.base.Equipment equipment = 1;
+}
