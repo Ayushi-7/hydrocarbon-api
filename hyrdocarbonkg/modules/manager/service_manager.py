@@ -2,8 +2,8 @@ import importlib
 import logging as logger
 from hydrocarbonkg.utils.logs import config as logconfig
 
-from hydrocarbonkg.modules.worker.api.get_all_disease import GetAllEquipment
-from hydrocarbonkg.modules.worker.api.get_all_symptom import GetAllFluids
+from hydrocarbonkg.modules.worker.api.get_all_equipment import GetAllEquipment
+from hydrocarbonkg.modules.worker.api.get_all_fluid import GetAllFluids
 
 def worker_factory(api_name):
     '''
